@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tiba's Forest Cinema</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+    <style>
+      /* Forest Theme */
+      body {
+        background-color: #e8f5e9;
+        font-family: 'Segoe UI', sans-serif;
+        color: #2e7d32;
+      }
+      .navbar {
+        background-color: #2e7d32 !important; /* Forest Green */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+      .jumbotron {
+        background-color: #c8e6c9;
+        border-bottom: 4px solid #81c784;
+      }
+      .card {
+        border: none;
+        border-radius: 10px;
+        transition: transform 0.2s;
+      }
+      .card:hover {
+        transform: scale(1.02);
+      }
+      .card-title {
+        color: #1b5e20;
+        font-weight: bold;
+      }
+      /* Customizing the Info Badge to match theme while keeping class name */
+      .badge-info {
+        background-color: #4caf50;
+      }
+      section {
+        padding-top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand" href="#">Tiba ALDawoodi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navTiba">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navTiba">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#showtimes">Showtimes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#deals">Deals</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="jumbotron text-center" id="about">
+      <h1 class="display-4">Nature of Film</h1>
+      <p class="lead">Experience movies in a serene environment.</p>
+    </div>
+
+    <div class="container" id="showtimes">
+      <h2 class="text-center mb-5">Now Playing</h2>
+      
+      <div class="card-deck">
+        
+        <div class="card shadow-sm">
+          <img src="https://m.media-amazon.com/images/M/MV5BMTcwMjcxYTQtYjJlOS00YTE1LWIyZGYtOGRlOTBlMWZmYTliXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="Kong">
+          <div class="card-body">
+            <h5 class="card-title">Kong: Skull Island</h5>
+            <p class="card-text">A diverse team of explorers is brought together to venture deep into an uncharted island in the Pacific—as beautiful as it is treacherous.</p>
+            
+            <span class="badge badge-pill badge-info">12:00 p.m.</span>
+            <span class="badge badge-pill badge-info">1:30 p.m.</span>
+            <span class="badge badge-pill badge-info">3:00 p.m.</span>
+            <span class="badge badge-pill badge-info">5:30 p.m.</span>
+            <span class="badge badge-pill badge-info">7:00 p.m.</span>
+            <span class="badge badge-pill badge-info">9:30 p.m.</span>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <img src="https://m.media-amazon.com/images/M/MV5BNzBkNjdjZTctNjdhOS00NmIyLTlkNjQtY2EwNGMwYmZjNTIxXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="Ghost">
+          <div class="card-body">
+            <h5 class="card-title">Ghost in the Shell</h5>
+            <p class="card-text">In the near future, Major is the first of her kind: A human saved from a terrible crash, who is cyber-enhanced to be a perfect soldier.</p>
+            
+            <span class="badge badge-pill badge-info">12:00 p.m.</span>
+            <span class="badge badge-pill badge-info">1:30 p.m.</span>
+            <span class="badge badge-pill badge-info">3:00 p.m.</span>
+            <span class="badge badge-pill badge-info">5:30 p.m.</span>
+            <span class="badge badge-pill badge-info">7:00 p.m.</span>
+            <span class="badge badge-pill badge-info">9:30 p.m.</span>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <img src="https://lumiere-a.akamaihd.net/v1/images/p_beautyandthebeast_19752_32e65c36.jpeg" class="card-img-top" alt="Beauty">
+          <div class="card-body">
+            <h5 class="card-title">Beauty and the Beast</h5>
+            <p class="card-text">The fantastic journey of Belle, a bright, beautiful and independent young woman who is taken prisoner by a beast in his castle.</p>
+            
+            <span class="badge badge-pill badge-info">12:00 p.m.</span>
+            <span class="badge badge-pill badge-info">1:30 p.m.</span>
+            <span class="badge badge-pill badge-info">3:00 p.m.</span>
+            <span class="badge badge-pill badge-info">5:30 p.m.</span>
+            <span class="badge badge-pill badge-info">7:00 p.m.</span>
+            <span class="badge badge-pill badge-info">9:30 p.m.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="deals" class="container text-center mt-5 mb-5">
+       <div class="alert alert-success">Green Club Members get 20% off!</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
