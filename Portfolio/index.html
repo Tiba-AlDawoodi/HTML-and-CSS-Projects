@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tiba ALDawoodi | Portfolio</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+    background-color: #f1f8e9;
+    color: #33691e;
+    padding-top: 60px;
+  }
+
+  /* FIXED NAVBAR */
+  .glass-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(46, 125, 50, 0.9); /* Semi-transparent Green */
+    backdrop-filter: blur(5px);
+    z-index: 100;
+  }
+
+  .glass-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .glass-nav li {
+    display: inline-block;
+  }
+
+  .glass-nav a {
+    display: block;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .glass-nav a:hover {
+    background-color: #1b5e20;
+    color: #a5d6a7;
+  }
+
+  /* VIDEO HEADER */
+  .nature-header {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    border-bottom: 4px solid #2e7d32;
+  }
+
+  video {
+    width: 100%;
+    transform: scale(1.2);
+  }
+
+  .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border: 1px solid white;
+  }
+
+  /* TWO COLUMNS */
+  .content-row {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+  }
+
+  .content-col {
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 15px;
+    background-color: white;
+    border: 1px solid #c8e6c9;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+
+  .content-col h2 { color: #2e7d32; }
+  .content-col p { color: #558b2f; }
+  
+  /* P Hover */
+  p:hover {
+    color: #1b5e20 !important;
+    background-color: #e8f5e9;
+    padding-left: 10px;
+    transition: 0.3s;
+  }
+
+  /* IMAGE SECTION */
+  .img-showcase {
+    text-align: center;
+    padding: 50px;
+    background-color: #dcedc8;
+  }
+
+  .leaf-img {
+    width: 300px;
+    border-radius: 50px 0 50px 0; /* Organic leaf shape */
+    filter: hue-rotate(45deg); /* Color shift filter */
+    border: 3px solid #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+
+  /* IMAGE OVERLAY FADE */
+  .fade-frame {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .fade-frame img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+  }
+
+  .fade-glass {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-color: rgba(46, 125, 50, 0.7);
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fade-frame:hover .fade-glass {
+    opacity: 1;
+  }
+
+  .fade-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  /* TABLE */
+  .table-section {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  table {
+    width: 70%;
+    border: 1px solid #2e7d32;
+    border-collapse: collapse;
+    background-color: white;
+  }
+
+  td, th {
+    padding: 15px;
+    border-bottom: 1px solid #c8e6c9;
+    text-align: center;
+  }
+
+  tr:first-child {
+    background-color: #2e7d32;
+    color: white;
+  }
+
+  /* FOOTER */
+  footer {
+    background-color: #1b5e20;
+    padding: 30px;
+    text-align: center;
+    color: #a5d6a7;
+    font-weight: bold;
+    border-top: 5px solid #4caf50;
+  }
+</style>
+</head>
+<body>
+
+<div class="glass-nav">
+  <ul>
+    <li><a href="#">Tiba ALDawoodi</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div>
+
+<div class="nature-header">
+  <video autoplay muted loop playsinline>
+    <source src="https://player.vimeo.com/external/494294435.sd.mp4?s=1240c061793740e5d487f909569733475727a858&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+  </video>
+  <div class="header-text">ORGANIC DESIGN</div>
+</div>
+
+<div class="content-row">
+  <div class="content-col">
+    <h2>Growth</h2>
+    <p>Building websites that evolve naturally. Hover to see the effect.</p>
+  </div>
+  <div class="content-col">
+    <h2>Structure</h2>
+    <p>Roots in HTML, leaves in CSS. Fixed dimensions applied here.</p>
+  </div>
+</div>
+
+<div class="img-showcase">
+  <h3>Hue Rotated & Shaped</h3>
+  <img src="https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Flowers" class="leaf-img">
+</div>
+
+<div class="fade-frame">
+  <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Music">
+  <div class="fade-glass">
+    <div class="fade-title">Tiba's World</div>
+  </div>
+</div>
+
+<div class="table-section">
+  <table>
+    <tr>
+      <th>Skill</th>
+      <th>Level</th>
+    </tr>
+    <tr>
+      <td>HTML5</td>
+      <td>Advanced</td>
+    </tr>
+    <tr>
+      <td>Nature UI</td>
+      <td>Expert</td>
+    </tr>
+  </table>
+</div>
+
+<footer>
+  © 2026 Tiba ALDawoodi. Cultivating Code.
+</footer>
+
+</body>
+</html>
